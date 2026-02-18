@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JourneyAI - رحلة تعلم البرمجة والذكاء الاصطناعي</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚀 JourneyAI</h1>
+            <p>صفحتك الشخصية لتنظيم رحلة تعلم البرمجة والذكاء الاصطناعي</p>
+            <p class="subtitle">لا يهم إن كنت طالبًا متخصصًا أو مبتدئًا تمامًا، JourneyAI تصنع لك جدولك الخاص!</p>
+        </header>
+
+        <div class="form-card">
+            <h2>🎯 أنشئ جدولك الآن</h2>
+            
+            <form id="scheduleForm">
+                <div class="form-group">
+                    <label for="name">الاسم:</label>
+                    <input type="text" id="name" placeholder="مثال: فاطمة الزهراء" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="level">مستواك الحالي:</label>
+                    <select id="level" required>
+                        <option value="">-- اختر مستواك --</option>
+                        <option value="beginner">مبتدئ تمامًا (لا أعرف أي شيء)</option>
+                        <option value="intermediate">متوسط (أعرف الأساسيات)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="interest">ما المجال الذي يهمك أكثر؟</label>
+                    <select id="interest" required>
+                        <option value="">-- اختر مجالك --</option>
+                        <option value="programming">البرمجة فقط</option>
+                        <option value="ai">الذكاء الاصطناعي فقط</option>
+                        <option value="both">كليهما (البرمجة + الذكاء الاصطناعي)</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn">✨ أنشئ جدولي المخصص</button>
+            </form>
+        </div>
+
+        <div id="result" class="result-card hidden">
+            <!-- هنا سيظهر الجدول بعد الضغط على الزر -->
+        </div>
+
+        <footer>
+            <p>طورته ❤️ بواسطة <strong>فاطمة الزهراء أوبلا</strong> - طالبة في الذكاء الاصطناعي من طنجة</p>
+            <p class="email">📧 fatimazahra.oubella@etu.uae.ac.ma</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
